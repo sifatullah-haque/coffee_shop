@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
+// ignore: must_be_immutable
 class ButtonNavBar extends StatelessWidget {
   void Function(int)? onClickChange;
   ButtonNavBar({super.key, required this.onClickChange});
@@ -8,7 +9,7 @@ class ButtonNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(24.0),
+      margin: const EdgeInsets.only(bottom: 15.0),
       child: GNav(
         onTabChange: (value) => onClickChange!(value),
         color: Colors.grey[400],
