@@ -49,8 +49,11 @@ class _CartPageState extends State<CartPage> {
                     color: Colors.brown,
                     borderRadius: BorderRadius.circular(10.0)),
                 child: const Center(
-                    child:
-                        Text("Pay Now", style: TextStyle(color: Colors.white))),
+                  child: Text(
+                    "Buy Now",
+                    style: TextStyle(color: Colors.white, fontSize: 14.0),
+                  ),
+                ),
               )
             ],
           ),
